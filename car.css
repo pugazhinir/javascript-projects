@@ -1,0 +1,119 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    cursor:pointer;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: black;
+
+}
+header{
+    display: flex;
+    justify-content:space-between;
+    color:white;
+    padding:15px 20px;
+    animation: header 3s ease-in-out;
+}
+@keyframes header{
+    0%{
+        transform:translateY(-100%)
+    }
+}
+.logo{
+    text-align:start;
+
+}
+.logo img{
+    width:80px;
+    height:auto;
+    justify-content:space-between;
+}
+
+nav li{
+    display: inline-block;
+    margin:12px 20px;
+    font-weight: 900px;
+}
+
+nav li:hover{
+    color: darksalmon;
+}
+
+.main{
+    width:100%;
+    display:flex;
+}
+.content{
+     width:50%;
+     margin-top:1%;
+     margin-left: 5%;
+     color:white;
+     animation: content 3s ease-in-out;
+}
+@keyframes content{
+   0%{
+      opacity:0%;
+      transform:translateX(-60%)
+}
+}
+.content h1{
+    font-size: 90px;
+    margin-bottom: 5%;
+    letter-spacing: 8px;
+     
+}
+.content h2{
+    font-size: 25px;
+    margin-bottom: 5%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+span{
+    color: sandybrown;
+}
+.content p{
+    font-size: 20px;
+    margin-bottom:5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button{
+    padding: 15px 30px;
+    background: transparent;
+    color:white;
+    font-size: 17px;
+    border-radius: 10px;
+    margin-bottom: 3px;
+    
+    
+}
+
+button:hover{
+    background-color: dimgray;
+
+}
+
+.image{
+    width:80%;
+    margin-top: 50px;
+
+}
+img{
+    animation: car 5s ease-in-out;
+}
+@keyframes car{
+    0%{
+        transform: translateX(100%);
+    }
+}
+@media screen and (max-width:1200px){
+.content{
+    width:100%;
+    text-align: center;
+}
+}
